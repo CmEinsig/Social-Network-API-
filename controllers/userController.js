@@ -84,7 +84,7 @@ module.exports = {
             res.status(500).json({ message: err })
         }
     },
-    //remove friend from user's friend list
+    //remove friend from friend list
     async deleteFriend(req, res) {
         try {
             const friendId = Types.ObjectId(req.params.friendId)
